@@ -4,6 +4,48 @@ body {
   cursor: crosshair;
 }
 
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+h1 {
+  color: black;
+  text-shadow: 1px 1px 1px rgba(255, 166, 0, 0.6);
+  padding-bottom: 10px;
+}
+
+button {
+  padding: 10px 50px;
+  background: transparent;
+  border: 2px solid black;
+  box-shadow: 1px 1px 1px rgba(255, 166, 0, 0.6);
+  cursor: crosshair;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  transition: 0.2s;
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+  text-shadow: 1px 1px 1px rgba(255, 166, 0, 0.6);
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: crosshair;
+  width: 100%;
+  height: 100%;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
 .bubble {
   position: absolute;
   border-radius: 300px;
