@@ -24,6 +24,7 @@ button {
   padding: 10px 50px;
   background: transparent;
   border: 2px solid black;
+  border-radius: 50px;
   box-shadow: 1px 1px 1px rgba(255, 166, 0, 0.6);
   cursor: crosshair;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",

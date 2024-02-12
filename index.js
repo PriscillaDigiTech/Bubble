@@ -1,6 +1,8 @@
 const counterDisplay = document.querySelector("h3");
 let counter = 0;
 
+let score = counter;
+
 const bubbleMaker = () => {
   const bubble = document.createElement("span");
   bubble.classList.add("bubble");
@@ -25,6 +27,14 @@ const bubbleMaker = () => {
   setTimeout(() => {
     bubble.remove();
   }, 8000);
+
+  function bubbleEnd() {
+    bubble.remove();
+    alert("Votre score est de " + counter + " points. Bien joué !");
+    window.location.href = "./bubble-end.html";
+  }
+
+  setTimeout(bubbleEnd, 60000);
 };
 
 setInterval(bubbleMaker, 1000);
